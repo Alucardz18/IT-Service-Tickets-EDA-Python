@@ -68,6 +68,7 @@ Used plots to see patterns fast:
 Some categories have far more tickets than others, meaning:
 - A model can look “good” by doing well on big classes while struggling on smaller ones
 - Metrics like weighted F1 and per-class recall matter (not just accuracy)
+  
   ![Ticket Count per Category](images/ticket_count_per_category.png)
 
 This chart shows a clear imbalance across categories, with Hardware dominating the dataset and Administrative rights appearing far less frequently.
