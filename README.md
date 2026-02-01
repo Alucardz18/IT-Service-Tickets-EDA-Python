@@ -68,6 +68,10 @@ Used plots to see patterns fast:
 Some categories have far more tickets than others, meaning:
 - A model can look “good” by doing well on big classes while struggling on smaller ones
 - Metrics like weighted F1 and per-class recall matter (not just accuracy)
+  ![Ticket Count per Category](images/ticket_count_per_category.png)
+
+This chart shows a clear imbalance across categories, with Hardware dominating the dataset and Administrative rights appearing far less frequently.
+
 
 ---
 
@@ -77,6 +81,11 @@ Ticket length behaves like a typical text dataset:
 - A small number are extremely long  
 That creates a **right tail**, pulling the **mean** upward.
 
+![Distribution of Ticket Lengths](images/Distribution_of_Ticket_Lengths.png)
+
+The right-skewed distribution confirms that a small number of extremely long tickets pull the mean upward, making median and IQR more reliable summary statistics.
+
+
 So instead of relying only on mean, I used:
 - **Median** (more stable “typical length”)
 - **IQR** (spread of the middle 50% of tickets)
@@ -85,6 +94,10 @@ So instead of relying only on mean, I used:
 
 ### C) Hardware vs Access: Hardware tickets tend to be longer and more variable
 I compared two categories: **Hardware** and **Access** using NumPy stats.
+![Ticket Length by Category](images/ticket_length_by_category.png)
+
+The boxplot shows that Hardware tickets have a wider IQR and more extreme outliers than Access tickets, explaining the large gap between mean and median values.
+
 
 **Hardware**
 - Mean ≈ 56.3 words  
