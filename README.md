@@ -15,6 +15,7 @@ My focus was on two things that can quietly make or break a classification proje
 ---
 
 ## Objective
+This analysis is intended as a pre-modeling step to guide feature engineering and evaluation strategy.
 Use Python to answer:
 - Which categories appear most/least often?
 - How imbalanced is the dataset?
@@ -82,7 +83,7 @@ Ticket length behaves like a typical text dataset:
 - A small number are extremely long  
 That creates a **right tail**, pulling the **mean** upward.
 
-![Distribution of Ticket Lengths](images/Distribution_of_Ticket_Lengths.png)
+![Distribution of Ticket Lengths](images/distribution_of_ticket_lengths.png)
 
 The right-skewed distribution confirms that a small number of extremely long tickets pull the mean upward, making median and IQR more reliable summary statistics.
 
