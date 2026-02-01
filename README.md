@@ -139,6 +139,18 @@ Median + IQR gives a clearer picture of the usual ticket length and variability.
 
 ---
 
+## Dataset
+
+The dataset used in this project was sourced from Kaggle:
+
+**IT Service Ticket Classification Dataset**  
+https://www.kaggle.com/datasets/adisongoh/it-service-ticket-classification-dataset/data
+
+The dataset is not included in this repository due to licensing restrictions.  
+To reproduce this analysis, download the CSV from Kaggle and place it in the project root directory.
+
+--- 
+
 ## Author
 **Nii Oye Kpakpo**  
 - GitHub: https://github.com/Alucardz18  
