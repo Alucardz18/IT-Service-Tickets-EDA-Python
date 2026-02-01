@@ -1,4 +1,5 @@
-# IT Service Tickets EDA 
+# IT Service Tickets EDA (Python)
+Exploratory data analysis of IT service tickets focusing on category imbalance and ticket length patterns using NumPy, Seaborn, and Matplotlib. The goal is to build intuition about the data before modeling and to understand why metrics like median and IQR are often more informative than the mean for text data.
 
 ## Context
 Before building any model for text classification, I wanted to understand the dataset the same way a data analyst would:  
@@ -16,6 +17,7 @@ My focus was on two things that can quietly make or break a classification proje
 
 ## Objective
 This analysis is intended as a pre-modeling step to guide feature engineering and evaluation strategy.
+
 Use Python to answer:
 - Which categories appear most/least often?
 - How imbalanced is the dataset?
@@ -96,6 +98,7 @@ So instead of relying only on mean, I used:
 
 ### C) Hardware vs Access: Hardware tickets tend to be longer and more variable
 I compared two categories: **Hardware** and **Access** using NumPy stats.
+
 ![Ticket Length by Category](images/ticket_length_by_category.png)
 
 The boxplot shows that Hardware tickets have a wider IQR and more extreme outliers than Access tickets, explaining the large gap between mean and median values.
