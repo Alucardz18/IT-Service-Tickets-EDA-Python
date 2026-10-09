@@ -5,7 +5,7 @@ Exploratory data analysis of IT service tickets focusing on category imbalance a
 Before building any model for text classification, I wanted to understand the dataset the same way a data analyst would:  
 **What does the data look like, how is it distributed, and what patterns (or problems) show up immediately?**
 
-This project uses an IT service ticket dataset with two main columns:
+This project uses an IT service ticket dataset of **47,837 tickets across 8 categories**, with two main columns:
 - **Document** (ticket text)
 - **Topic_group** (ticket category)
 
@@ -74,7 +74,7 @@ Some categories have far more tickets than others, meaning:
   
   ![Ticket Count per Category](images/ticket_count_per_category.png)
 
-This chart shows a clear imbalance across categories, with Hardware dominating the dataset and Administrative rights appearing far less frequently.
+This chart shows a clear imbalance across categories. **Hardware makes up 28.5%** of all tickets (13,617), while **Administrative rights is only 3.7%** (1,760), nearly an 8 to 1 gap. The top two categories (Hardware and HR Support) account for over half of the dataset.
 
 
 ---
